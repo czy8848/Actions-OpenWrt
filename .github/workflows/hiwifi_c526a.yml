@@ -19,7 +19,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/czy8848/lede
+  REPO_URL: https://github.com/czy8848/xiaowanerlede.git
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: hiwifi_c526a.config
