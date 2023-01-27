@@ -20,16 +20,16 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/czy8848/lede
+  REPO_URL: https://github.com/czy8848/coolsnowwolflede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: D2.config
+  CONFIG_FILE: xiaomimini.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
-  UPLOAD_WETRANSFER: true
+  UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
 
