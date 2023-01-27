@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: wifid2
+name: xiaomi-mini
 
 on:
   repository_dispatch:
