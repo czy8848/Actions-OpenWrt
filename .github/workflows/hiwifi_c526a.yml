@@ -64,8 +64,8 @@ jobs:
     - name: Load custom feeds
       run: |
         cd openwrt
-        echo "src-git kenzo https://github.com/kenzok8/openwrt-packages
-              src-git small https://github.com/kenzok8/small" >> ./feeds.conf.default
+        echo "src-git kenzo https://github.com/kenzok8/openwrt-packages"
+        echo "src-git small https://github.com/kenzok8/small" >> ./feeds.conf.default
         
 
       
