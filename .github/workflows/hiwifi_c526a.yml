@@ -63,8 +63,14 @@ jobs:
 
     - name: Load custom feeds
       run: |
+
+        export FEEDS_CONF=https://github.com/czy8848/openclash/blob/main/feeds.conf.default
+        chmod +x $DIY_P1_SH
         cd openwrt
-        src-git custom_feed https://github.com/czy8848/openclash/blob/main/feeds.conf.default
+        $GITHUB_WORKSPACE/$DIY_P1_SH
+        
+        
+        
 
 
     - name: Update & Install feeds
