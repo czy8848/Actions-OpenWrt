@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/czy8848/lede
   REPO_BRANCH: 20230609
   FEEDS_CONF: https://github.com/czy8848/openclash/blob/main/feeds.conf.default
   CONFIG_FILE: hiwifi_c526a.config
