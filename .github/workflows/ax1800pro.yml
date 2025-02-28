@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: phicomm_k3
+name: ax1800pro
 
 on:
   repository_dispatch:
