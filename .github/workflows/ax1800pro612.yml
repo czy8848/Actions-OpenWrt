@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/czy8848/lede
+  REPO_URL: https://github.com/czy8848/openwrt-6.x.git
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ax1800pro612.config
