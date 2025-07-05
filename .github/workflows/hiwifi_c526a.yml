@@ -91,9 +91,8 @@ jobs:
     #    TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
     #    TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
 
-      uses: mxschmitt/action-tmate@v3
-      with:
-        limit-access-to: ${{ github.actor }}  # 限制访问仅限触发者
+      uses: P3TERX/debugger-action@main
+      if: env.SSH_ACTIONS == 'true' || contains(github.event.action, 'ssh')
 
         
 
