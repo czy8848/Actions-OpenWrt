@@ -85,11 +85,17 @@ jobs:
 
         
     - name: SSH connection to Actions
-      uses: P3TERX/ssh2actions@v1.0.0
-      if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
-      env:
-        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+    #  uses: P3TERX/ssh2actions@v1.0.0
+    #  if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
+    #  env:
+    #    TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    #    TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+
+      uses: mxschmitt/action-tmate@v3
+      with:
+        limit-access-to: ${{ github.actor }}  # 限制访问仅限触发者
+
+        
 
     - name: Download package
       id: package
