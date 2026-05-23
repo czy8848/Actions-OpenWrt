@@ -20,9 +20,9 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/czy8848/lede
-  REPO_BRANCH: 20230609
-  FEEDS_CONF: feeds.conf.default
+  REPO_URL: https://github.com/czy8848/coolsnowwolf20230609
+  REPO_BRANCH: master
+  FEEDS_CONF: feeds.conf.defaultmaster
   CONFIG_FILE: hiwifi_c526a.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
